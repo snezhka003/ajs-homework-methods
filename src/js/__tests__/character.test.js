@@ -56,10 +56,10 @@ test('test method levelUp with invalid value of health', () => {
     character.health = 0;
     character.levelUp();
     return character;
-  }).toThrow(Error);
+  }).toThrow(new Error('Cannot raise level of dead'));
 });
 
-test('test method damage with value of health > 0', () => {
+test('test method damage with value of health > 0', () => { // не знаю почему, но этот тест как будто не учитывается в покрытии, т.к. мне пишет, что 31 строка в файле character.js не покрыта
   const character = new Character('hero', 'Bowerman', 40, 20);
   character.damage(10);
   const expected = {
