@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/snezhka003/ajs-homework-methods/issues"
   },
-  "homepage": "hhttps://github.com/snezhka003/ajs-homework-methods#readme",
+  "homepage": "https://github.com/snezhka003/ajs-homework-methods#readme",
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.2",
