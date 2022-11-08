@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/snezhka003/ajs-homework-classes_inheritance.git"
+    "url": "git+https://github.com/snezhka003/ajs-homework-methods.git"
   },
   "author": "snezhka003",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/snezhka003/ajs-homework-classes_inheritance/issues"
+    "url": "https://github.com/snezhka003/ajs-homework-methods/issues"
   },
-  "homepage": "https://github.com/snezhka003/ajs-homework-classes_inheritance#readme",
+  "homepage": "hhttps://github.com/snezhka003/ajs-homework-methods#readme",
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.2",
