@@ -18,21 +18,21 @@ test('test class Character with invalid values of properties', () => {
   expect(() => {
     const character = new Character('volandemort', 'Magic', 40, 20);
     return character;
-  }).toThrow(new Error('Type not found')); // можно также написать просто Error вместо new Error('Type not found')
+  }).toThrow(new Error('Not valid character name and type!'));
 });
 
 test('test class Character with invalid value of name', () => {
   expect(() => {
     const character = new Character('volandemort', 'Daemon', 40, 20);
     return character;
-  }).toThrow(Error);
+  }).toThrow(new Error('Name length must be in [2;10] interval!'));
 });
 
 test('test class Character with invalid value of type', () => {
   expect(() => {
     const character = new Character('voland', 'Pacman', 40, 20);
     return character;
-  }).toThrow(Error);
+  }).toThrow(new Error('Not valid character type!'));
 });
 
 test('test method levelUp with valid value of health', () => {

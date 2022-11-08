@@ -18,21 +18,21 @@ test('test class Zombie with invalid values of properties', () => {
   expect(() => {
     const zombie = new Zombie('volandemort', 'Magic');
     return zombie;
-  }).toThrow(Error);
+  }).toThrow(new Error('Not valid character name and type!'));
 });
 
 test('test class Zombie with invalid value of name', () => {
   expect(() => {
     const zombie = new Zombie('volandemort');
     return zombie;
-  }).toThrow(Error);
+  }).toThrow(new Error('Name length must be in [2;10] interval!'));
 });
 
 test('test class Zombie with invalid value of type', () => {
   expect(() => {
     const zombie = new Zombie('zombie', 'Pacman');
     return zombie;
-  }).toThrow(Error);
+  }).toThrow(new Error('Not valid character type!'));
 });
 
 // мне кажется, что в данном случае тесты на проверку ошибки
