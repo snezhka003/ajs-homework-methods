@@ -14,13 +14,6 @@ test('test class Character with valid values of property', () => {
   expect(character).toEqual(expected);
 });
 
-test('test class Character with invalid values of properties', () => {
-  expect(() => {
-    const character = new Character('volandemort', 'Magic', 40, 20);
-    return character;
-  }).toThrow(new Error('Not valid character name and type!'));
-});
-
 test('test class Character with invalid value of name', () => {
   expect(() => {
     const character = new Character('volandemort', 'Daemon', 40, 20);
